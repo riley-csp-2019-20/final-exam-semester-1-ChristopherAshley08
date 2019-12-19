@@ -104,6 +104,13 @@ def write_rule():
     font = ("roboto", 15, "bold")
     sc.write("r=rules", font=font)
 
+def eraser_rule():
+    sc.penup()
+    sc.goto(-300,-400)
+    font = ("roboto", 50, "bold")
+    sc.write("e=eraser", font=font)
+
+
 write_rule()
 
 #===================rulepopup===================
@@ -118,6 +125,7 @@ def rulepopup():
     rule_pendown()
     rule_penlarge()
     rule_clear_rules()
+    eraser_rule()
 
 #===================pencolor===================
 
